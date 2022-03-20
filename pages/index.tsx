@@ -13,7 +13,7 @@ function ProductCard() {
   return (
     <Card>
       <Stack space="medium">
-        <Placeholder />
+        <Placeholder height={200} />
 
         <Cluster space="small">
           <Placeholder height={24} width={30} />
@@ -28,7 +28,7 @@ function ProductCard() {
           <Cluster space="small">★★★★</Cluster>
         </Stack>
 
-        <Columns space="small" align="stretch" collapseBelow={200}>
+        <Columns space="small" align="stretch" collapseBelow={300}>
           <Column>
             <Placeholder height={44} label="OK" />
           </Column>
