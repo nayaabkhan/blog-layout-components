@@ -29,7 +29,7 @@ function ProductCard() {
 
             <Stack space="none">
               <h1>Product Name</h1>
-              <Cluster space="small">★★★★</Cluster>
+              <Columns space="small">★★★★</Columns>
             </Stack>
 
             <Columns space="small" align="stretch" collapseBelow={300}>
