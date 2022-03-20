@@ -42,7 +42,7 @@ export function AutoGrid({
   })
 
   const style: React.CSSProperties = {
-    gridTemplateColumns: `repeat(auto-fit, minmax(${minItemWidth}px, 1fr))`,
+    gridTemplateColumns: `repeat(auto-fit, minmax(min(100%, ${minItemWidth}px), 1fr))`,
   }
 
   return React.createElement(as, { className, style }, children)
