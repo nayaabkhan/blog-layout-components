@@ -12,31 +12,37 @@ import {
 function ProductCard() {
   return (
     <Card>
-      <Stack space="medium">
-        <Placeholder height={200} />
+      <Columns alignY="stretch" collapseBelow={400} space="medium">
+        <Column>
+          <Placeholder height={250} />
+        </Column>
 
-        <Cluster space="small">
-          <Placeholder height={24} width={30} />
-          <Placeholder height={24} width={40} />
-          <Placeholder height={24} width={60} />
-          <Placeholder height={24} width={50} />
-          <Placeholder height={24} width={30} />
-        </Cluster>
+        <Column>
+          <Stack space="medium">
+            <Cluster space="small">
+              <Placeholder height={24} width={30} />
+              <Placeholder height={24} width={40} />
+              <Placeholder height={24} width={60} />
+              <Placeholder height={24} width={50} />
+              <Placeholder height={24} width={30} />
+            </Cluster>
 
-        <Stack space="none">
-          <h1>Product Name</h1>
-          <Cluster space="small">★★★★</Cluster>
-        </Stack>
+            <Stack space="none">
+              <h1>Product Name</h1>
+              <Cluster space="small">★★★★</Cluster>
+            </Stack>
 
-        <Columns space="small" align="stretch" collapseBelow={300}>
-          <Column>
-            <Placeholder height={44} label="OK" />
-          </Column>
-          <Column>
-            <Placeholder height={44} label="Cancel" />
-          </Column>
-        </Columns>
-      </Stack>
+            <Columns space="small" align="stretch" collapseBelow={300}>
+              <Column>
+                <Placeholder height={44} label="OK" />
+              </Column>
+              <Column>
+                <Placeholder height={44} label="Cancel" />
+              </Column>
+            </Columns>
+          </Stack>
+        </Column>
+      </Columns>
     </Card>
   )
 }

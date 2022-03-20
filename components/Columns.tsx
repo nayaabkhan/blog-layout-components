@@ -22,7 +22,7 @@ type ColumnsProps = {
   /**
    * Sets the vertical alignment of the items.
    */
-  alignY?: Exclude<Atoms['alignItems'], 'stretch'>
+  alignY?: Atoms['alignItems']
   /**
    * The columns.
    */
